@@ -1,6 +1,6 @@
 DOSW LAB#1
 
-INTEGRANTES
+INTEGRALES
 
 * Ignacio Castillo
 * Diego Rodriguez
