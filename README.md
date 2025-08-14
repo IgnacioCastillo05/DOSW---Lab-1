@@ -1,6 +1,6 @@
 DOSW LAB#1
 
-INTEGRANTES
+PROPIETARIOS
 
 * Ignacio Castillo
 * Diego Rodriguez
