@@ -15,7 +15,7 @@ R: sirve para crear un commit (una confirmación de cambios) en Git y guardar es
 
 
 
-holaaaaa diego manda 🦅🦅🦅🦅🦅
+Diego manda 🦅🦅🦅🦅🦅
 
 
 
