@@ -3,7 +3,7 @@ DOSW LAB#1
 PROPIETARIOS
 
 * Ignacio Castillo Rendón
-* Diego Rodriguez
+* Diego Rodriguez Velasquez
 
 RESPUESTAS
 
