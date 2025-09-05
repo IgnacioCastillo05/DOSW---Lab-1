@@ -38,3 +38,4 @@ public class EcoMisterioso {
         String resultado = ecoLambda.apply(mensaje);
         System.out.println("Eco misterioso: " + resultado);
     }
+}
