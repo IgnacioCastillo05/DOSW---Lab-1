@@ -1,5 +1,7 @@
 package Laboratorio1.Reto2;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
