@@ -1,32 +1,23 @@
-package edu.escuelaing.bienvenida;
-
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class MensajeBienvenida {
-
-    /**
-     * Genera el mensaje de bienvenida usando streams, map y collect.
-     */
-    public static String generar(List<Estudiante> pareja) {
-        if (pareja == null || pareja.isEmpty()) {
-            return "¡Hola! (no hay estudiantes registrados)";
-        }
-
-        // Descripciones: "Ignacio Castillo estudiante de 6 semestre de 19 años"
-        String descripciones = pareja.stream()
-                .map(Estudiante::toString)
-                .collect(Collectors.joining(" y "));
-
-        // Correos: "correo1 y correo2"
-        String correos = pareja.stream()
-                .map(Estudiante::getCorreoInstitucional)
-                .collect(Collectors.joining(" y "));
-
-        return String.format(
-            "¡Hola Bienvenidos! Nosotros somos la pareja conformada por %s, " +
-            "nuestros correos institucionales son %s",
-            descripciones, correos
+    public static void main(String[] args) {
+        List<Estudiante> estudiantes = Arrays.asList(
+            new Estudiante("Juan Pérez", 21, "juan.perez@mail.escuelaing.edu.co", 6),
+            new Estudiante("Miguel Roncancio", 22, "miguel.roncancio@mail.escuelaing.edu.co", 5)
         );
+        
+        String mensaje = estudiantes.stream()
+            .map(e -> e.getNombre() + " estudiante de la escuela de " + 
+                     e.getSemestre() + " semestre de " + e.getEdad() + " años")
+            .collect(Collectors.joining(" y "));
+            
+        String correos = estudiantes.stream()
+            .map(Estudiante::getCorreo)
+            .collect(Collectors.joining(" y "));
+            
+        System.out.println("¡Hola Bienvenidos! Nosotros somos la pareja conformada por " + 
+                          mensaje + ", nuestros correos institucionales son " + correos);
     }
 }
