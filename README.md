@@ -70,3 +70,27 @@ git stash pop: Restaura los cambios guardados y elimina el stash.
 
 HashMap: No sincronizado, permite null, más rápido.
 HashTable: Sincronizado (thread-safe), no permite null, más lento.
+
+### 7. Qué ventajas tiene Collectors.toMap() frente a un bucle tradicional para llenar un mapa? 
+
+Collectors.toMap() es más conciso, declarativo y seguro que un bucle, permite definir cómo resolver claves duplicadas, elegir el tipo de Map, y funciona con parallel streams, mientras que con un bucle hay que programar todo eso manualmente.
+
+### 8. Si usas List con objetos y luego aplicas stream().map() que tipo de operación estas haciendo? 
+
+stream().map() es una operación intermedia de transformación que aplica una función a cada elemento y devuelve un nuevo Stream con los resultados, pudiendo cambiar el tipo de los elementos.
+
+### 9. Que hace el método stream().filter() y que retorna? 
+
+stream().filter() aplica un predicado lógico y devuelve un Stream solo con los elementos que cumplen la condición, no altera la colección original y se evalúa cuando se aplica una operación terminal.
+
+### 10. Describe el paso a paso de cómo crear una rama desde develop si es una funcionalidad nueva. 
+
+Actualizamos develop con git pull, luego creas y cambias a la nueva rama con git checkout -b feature/nombre, trabaja allí, hace commit y la sube al remoto para finalmente integrarla con un merge o pull request.
+
+### 11. ¿Cuál es la diferencia entre crear una rama con git branch y con git checkout -b? 
+
+Git branch nombre solo crea la rama pero te deja en la actual, mientras que git checkout -b nombre la crea y además te cambia a ella en un solo paso.
+
+### 12. ¿Por qué es recomendable crear ramas feature/ para nuevas funcionalidades en lugar de trabajar en main directamente? 
+
+Porque aíslan el desarrollo, protegen la rama main estable, permiten revisiones y trabajo en paralelo, y facilitan mantener un historial limpio y controlado.
