@@ -12,6 +12,11 @@ public class EcoMisterioso {
         }
         return sb.toString().trim();
     }
+  
+    public static String invertirConBuffer(String mensaje) {
+        StringBuffer sb = new StringBuffer(mensaje);
+        return sb.reverse().toString();
+    }
     
 
     public static String ecoCompleto(String mensaje) {
@@ -27,11 +32,9 @@ public class EcoMisterioso {
     
     public static void main(String[] args) {
         String mensaje = "Hola";
-        
-        // Usar lambda para invocar
+      
         java.util.function.Function<String, String> ecoLambda = EcoMisterioso::ecoCompleto;
         
         String resultado = ecoLambda.apply(mensaje);
         System.out.println("Eco misterioso: " + resultado);
     }
-}
