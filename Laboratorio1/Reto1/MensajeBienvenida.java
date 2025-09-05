@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 public class MensajeBienvenida {
     public static void main(String[] args) {
         List<Estudiante> estudiantes = Arrays.asList(
-            new Estudiante("Juan Pérez", 21, "juan.perez@mail.escuelaing.edu.co", 6),
-            new Estudiante("Miguel Roncancio", 22, "miguel.roncancio@mail.escuelaing.edu.co", 5)
+            new Estudiante("Ignacio Castillo", 19, "ignacio.castillo-r@mail.escuelaing.edu.co", 6),
+            new Estudiante("Juan Diego Rodriguez", 20, "juan.rvelasquez@mail.escuelaing.edu.co", 6)
         );
         
         String mensaje = estudiantes.stream()
