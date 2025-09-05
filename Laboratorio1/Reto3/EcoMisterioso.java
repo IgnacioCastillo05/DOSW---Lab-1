@@ -14,6 +14,9 @@ public class EcoMisterioso {
         String repetido = Stream.generate(() -> mensaje)
                 .limit(3)
                 .collect(Collectors.joining(" "));
+        
+        StringBuffer buffer = new StringBuffer(repetido);
+        return buffer.reverse().toString();
     }
     
     public static void main(String[] args) {
