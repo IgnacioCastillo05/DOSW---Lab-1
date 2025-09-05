@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CarreraParalela {
+    
     static class Resultados {
         private int maximo1, minimo1, cantidad1;
         private int maximo2, minimo2, cantidad2;
@@ -12,7 +13,6 @@ public class CarreraParalela {
         private boolean cantidadEsPar_Lista1, cantidadEsImpar_Lista1;
         private boolean cantidadEsPar_Lista2, cantidadEsImpar_Lista2;
         
-        // Constructor y getters/setters...
         
         @Override
         public String toString() {
@@ -27,23 +27,27 @@ public class CarreraParalela {
                 .max(Integer::compareTo)
                 .orElse(0);
     }
+  
+    public static Map<String, Integer> encontrarMinimoYCantidad(List<Integer> numeros) {
+          Map<String, Integer> resultado = new HashMap<>();
+          resultado.put("minimo", numeros.stream().min(Integer::compareTo).orElse(0));
+          resultado.put("cantidad", numeros.size());
+          return resultado;
+      }
 
     public static Resultados analizarListas(List<Integer> lista1, List<Integer> lista2) {
         Resultados resultado = new Resultados();
         
-        // Lista 1
         resultado.maximo1 = encontrarMaximo(lista1);
         Map<String, Integer> minYCant1 = encontrarMinimoYCantidad(lista1);
         resultado.minimo1 = minYCant1.get("minimo");
         resultado.cantidad1 = minYCant1.get("cantidad");
         
-        // Lista 2
         resultado.maximo2 = encontrarMaximo(lista2);
         Map<String, Integer> minYCant2 = encontrarMinimoYCantidad(lista2);
         resultado.minimo2 = minYCant2.get("minimo");
         resultado.cantidad2 = minYCant2.get("cantidad");
         
-        // Verificaciones con operador ternario
         resultado.mayorEsMultiploDe2_Lista1 = resultado.maximo1 % 2 == 0 ? true : false;
         resultado.mayorEsDivisorDe2_Lista1 = 2 % resultado.maximo1 == 0 ? true : false;
         resultado.mayorEsMultiploDe2_Lista2 = resultado.maximo2 % 2 == 0 ? true : false;
@@ -55,5 +59,13 @@ public class CarreraParalela {
         resultado.cantidadEsImpar_Lista2 = resultado.cantidad2 % 2 != 0 ? true : false;
         
         return resultado;
+    }
+  
+    public static void main(String[] args) {
+        List<Integer> lista1 = Arrays.asList(5, 10, 15, 3, 8);
+        List<Integer> lista2 = Arrays.asList(12, 7, 9, 2);
+        
+        Resultados resultado = analizarListas(lista1, lista2);
+        System.out.println(resultado);
     }
 }
