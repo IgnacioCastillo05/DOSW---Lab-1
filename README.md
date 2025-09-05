@@ -23,6 +23,32 @@ R: No, pero hay practicas que reducen en gran parte la posibilidad, como lo son:
 R: Es una solucitud para fusionar cambios de una rama a otra, permite que el equipo revise, comente y apruebe antes de integrarlo en la rama deseada.
  🦅🦅🦅🦅🦅
 
+## Retos:
+
+### Reto 1
+
+![alt text](docs/reto1.jpeg)
+
+### Reto 2
+
+![reto2](docs/reto2.jpeg)
+
+### Reto 3
+
+![reto3](docs/reto3.jpeg)
+
+### Reto 4
+
+![reto4](docs/reto4.jpeg)
+
+### Reto 5
+
+![reto5](docs/reto5.jpeg)
+
+### Reto 6
+
+![reto6](docs/reto6.jpeg)
+
 **Bibliografía**
 
 1. GitHub Guides. Git Add. Recuperado de GitHub: https://github.com/git-guides/git-add
@@ -35,4 +61,4 @@ R: Es una solucitud para fusionar cambios de una rama a otra, permite que el equ
 
 5. Atlassian. Git merge conflicts. Recuperado de Atlassian: https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
 
-avionavionavion
+
