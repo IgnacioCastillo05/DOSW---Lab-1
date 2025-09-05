@@ -1,3 +1,5 @@
+package Laboratorio1.Reto1;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
