@@ -20,9 +20,28 @@ R: a
 R: e
 
 
-Diego manda 🦅🦅🦅🦅🦅✈️🏢🏢
+## Retos:
 
+### Reto 1
 
+![reto1](../docs/reto1.jpeg)
 
-avionavionavion
+### Reto 2
 
+![reto2](../docs/reto2.jpeg)
+
+### Reto 3
+
+![reto3](../docs/reto3.jpeg)
+
+### Reto 4
+
+![reto4](../docs/reto4.jpeg)
+
+### Reto 5
+
+![reto5](../docs/reto5.jpeg)
+
+### Reto 6
+
+![reto6](../docs/reto6.jpeg)
