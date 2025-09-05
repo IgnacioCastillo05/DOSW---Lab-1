@@ -13,11 +13,12 @@ public class EcoMisterioso {
         return sb.toString().trim();
     }
     
-    // Función combinada (resolución de conflicto)
+
     public static String ecoCompleto(String mensaje) {
-        String repetido = Stream.generate(() -> mensaje)
-                .limit(3)
-                .collect(Collectors.joining(" "));
+        
+        // Invertir el resultado
+        StringBuffer buffer = new StringBuffer(repetido);
+        return buffer.reverse().toString();
     }
     
     public static void main(String[] args) {
